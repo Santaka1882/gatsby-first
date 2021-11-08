@@ -1,10 +1,17 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
-    title: "My First Gatsby Site",
+    title: "(ᗜˬᗜ) Aya fumo blog (ᗜˬᗜ)",
   },
   plugins: [
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `posts`,
+        path: `${__dirname}/posts`,
+      }
+    }
   ],
 };
